@@ -32,11 +32,11 @@ public class TitleButtons : MonoBehaviour
     public Text MusicManNumber;
     public Text RTagNumber;
 
-    //These will be replaced with AI Levels
-    private int TagAINumber;
-    private int PuppetAINumber;
-    private int MusicManAINumber;
-    private int RTagAINumber;
+    //These will be used for the with AI Levels
+    public static int TagAINumber;
+    public static int PuppetAINumber;
+    public static int MusicManAINumber;
+    public static int RTagAINumber;
 
     // Start is called before the first frame update
     void Start()
@@ -244,5 +244,9 @@ public class TitleButtons : MonoBehaviour
     public void ExitButton()
     {
         Application.Quit();
+    }
+    public void CustomNightPlayButton()
+    {
+        SceneManager.LoadScene(1);
     }
 }

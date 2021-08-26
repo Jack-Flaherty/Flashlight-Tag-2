@@ -17,6 +17,8 @@ public class MusicManAI : MonoBehaviour
     private float jsCountDown;
 
     public AudioClip jsMM;
+
+    public GameObject MusicManJS;
     // Start is called before the first frame update
     void Start()
     {
@@ -87,9 +89,6 @@ public class MusicManAI : MonoBehaviour
     }
     public void MMJumpscare()
     {
-        audioSource.Stop();
-        audioSource.pitch = 1;
-        audioSource.volume = 0.075f;
-        audioSource.PlayOneShot(jsMM, .5f);
+        MusicManJS.SetActive(true);
     }
 }

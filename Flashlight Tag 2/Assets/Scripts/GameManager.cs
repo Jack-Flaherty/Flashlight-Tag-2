@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static bool gameStart;
+    private void OnEnable()
+    {
+        gameStart = true;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +18,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+
 }
